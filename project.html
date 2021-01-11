@@ -37,8 +37,8 @@
 <un class=unordered>
 <li><a href="https://htmlpreview.github.io/?https://github.com/Kristina1999r/Projekat/blob/main/project.html" id=active class=navlink alt=pocetna>Pocetna</a></li>
 <li><a href=#onama class=navlink alt=onama>O nama</a></li>
-<li><a href="https://htmlpreview.github.io/?https://github.com/Kristina1999r/Projekat/blob/main/galerija.html" class=navlink alt=galerija>Galerija</a></li>
-<li><a href="https://htmlpreview.github.io/?https://github.com/Kristina1999r/Projekat/blob/main/narucivanje.html" class=navlink alt=narucivanje>Narucivanje</a></li>
+<li><a href="#galerija" class=navlink alt=galerija>Galerija</a></li>
+<li><a href="#narucivanje" class=navlink alt=narucivanje>Narucivanje</a></li>
 <li><a href=#kontakt class=navlink alt=kontakt>Kontakt</a></li>
 </un>
 </div>
@@ -80,6 +80,98 @@ Nudimo Vam brižljivo odabrane ukuse i kombinacije, od čokolade, raznog voća, 
 </div>
 </div>
 </a>
+
+<div class="content1 " >
+    <a >
+       <h2 title="slike">GALERIJA</h2>
+       <hr >
+       <br>
+       <div id="prvired">
+           <img src="a.jpg" class="slika" onmouseover="this.src='e.jpg'"  onmouseout="this.src='a.jpg'" alt="vocne torte">
+           <img src="b.jpg" class="slika" onmouseover="this.src='c.jpg'" onmouseout="this.src='b.jpg'" alt="rodjendanske torte">
+           <img src="m.jpg" class="slika" onmouseover="this.src='n.jpg'" onmouseout="this.src='m.jpg'" alt="domace torte">
+           <img src="d.jpg" class="slika" onmouseover="this.src='f.jpg'" onmouseout="this.src='d.jpg'" alt="domaci kolaci">
+       </div>
+       <div>
+       <p id="text1">Svi naši kolači obiluju kvalitetnim sastojcima kao što su orasi, lešnici, čokolada, kesten, 
+           smokve, šljive, koji se ručno obrađuju i pažljivo pripremaju po tradicionalnim receptima. </p>
+       </div>
+       <div>
+           <p id="text2">Kvalitetni sastojci i pažljiva izrada su jedina tajna naših domaćih torti! 
+               Sve torte pravimo po domaćim receptima od jaja, oraha, lešnika ili badema, 
+               čokolade, putera, slatke pavlake, svežeg voća, kestena… </p>
+           </div>
+
+           <div id="drugired" >
+            <img src="cupkake1.jpg" class="slika" onmouseover="this.src='cupkake2.jpg'"  onmouseout="this.src='cupkake1.jpg'" alt="mafini">
+            <img src="cakes1.jpg" class="slika" onmouseover="this.src='cakes2.jpg'" onmouseout="this.src='cakes1.jpg'" alt="torte za devojcice">
+            <img src="cakes3.jpg" class="slika" onmouseover="this.src='krofne.jpg'" onmouseout="this.src='cakes3.jpg'" alt="krofne">
+            <img src="kolacici.jpg" class="slika" onmouseover="this.src='kolacici2.jpg'" onmouseout="this.src='kolacici.jpg'" alt="figurice za tortu">
+        </div>
+       </a>
+</div>
+
+<div class="content " >
+    <a alt="naruci">
+        <h2 class="naruciti" title="narucivanje torti">NARUCIVANJE</h2>
+        <hr>
+        <p id="text4">-Kako naruciti?- </p>
+        <p class="text3">Naručivanje naših proizvoda možete izvršiti putem telefona 021
+             / 64 99 888 i  062/ 11 33 876 ili direktno dolaskom u
+             poslastičarnicu koja se nalazi na adresi  Rumenacka 24., Detelinara, Novi Sad.</p>
+            </a>
+             <div class="red">
+                        <div class="box">
+                        <p class="boxtext">Odaberite ukus</p>
+                        <i class="fa fa-search ikonica"></i>
+                        <div class="boxokvir">
+                            <p class="text-u">Izaberite ukus koji zelite.
+                                Imamo sirok asortiman razlicitih ukusa torti i kolaca.
+                            </p>
+                        </div>
+                    </div>
+                        <div class="box" >
+                            <p class="boxtext" >Odaberite izgled</p>
+                            <i class="fas fa-birthday-cake ikonica"></i>
+                            <div class="boxokvir">
+                                <p class="text-u">Dizajn mozete sami osmisliti, 
+                                    ili izabraniti primere iz naseg asortimana.
+                                </p>
+                            </div></div>  
+                        <div class="box">
+                            <p class="boxtext"  >Narucivanje </p>
+                            <i class="fas fa-car-side ikonica" ></i>
+                            <div class="boxokvir">
+                                <p class="text-u">Ako ste se odlucili za izgled i ukus, 
+                                    na redu je narucivanje Vase poslastice.
+                                </p>
+                            </div>  
+                        </div>       
+                            <div class="posalji">
+                                <p id="text1">Posaljite nam Vase informacije, a mi cemo Vam rezervisati prvi slobodni termin. </p>
+                                <hr>
+                            <input type="submit" onclick="popuni();"  value="POSALJI INFORMACIJE" name="naruci" id="sub">
+                            <p id="unesi"  ></p>
+                            <p id="demo"  ></p>
+                            
+                             </div>
+
+                             <div id="forma">
+                                 <form id="popuniti" action="" method="POST">
+                                     <label class="text3">Ime:</label><input type="text"  onfocus="input(this); "name="Ime" id="ime" placeholder="Unesite Vase ime:" >
+                                     <label class="text3">Prezime:</label><input type="text" onfocus="input(this); "name="Prezime" id="prezime" placeholder="Unesite Vase prezime:">
+                                     <br>
+                                     <label class="text3">Email:</label><input type="text" onfocus="input(this); "name="Email" id="email" placeholder="Unesite Vasu e-mail adresu:">
+                                     <label class="text3">Lozinka:</label><input type="password" onfocus="input(this); "name="Lozinka" id="lozinka" placeholder="Unesite lozinku e-mail adrese">
+                                    <p id="greska" style="color: red; text-align: center;"></p>
+                                    </form>
+                             </div>
+                
+    </div>
+</div>
+
+
+
 <div class=footer style=text-align:center><br>
 <div class=drugi style=margin-top:15px>
 <a name=kontakt>
