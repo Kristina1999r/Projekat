@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"       content="Najukusnije torte i kolaci, mafini, figurice za tortu"/> 
+    <meta name="copyright"       content="Cookies&Cakes"/>
+    <meta name="description"     content="Voćne, čokoladne, tradicionalne, moderne, dijetalne, torte po želji, a uvek najlepše dekorisane i prilagođene povodu."/>
+
+    <title>Cookies&Cakes/Narucivanje/NajukusnijeTorte/Kolaci</title>
+    <link rel="stylesheet" href="style.css">
+    <script src=javas.js></script>
+
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<meta property="og:url"   content="https://htmlpreview.github.io/?https://github.com/Kristina1999r/Cookies-Cakes/blob/main/ProjekatJS/project.html"/>
+<meta property="og:type"  content="website"/>
+<meta property="og:title" content="Cookies&Cakes">
+<meta property="og:description"  content="Voćne, čokoladne, tradicionalne, moderne, dijetalne, torte po želji, a uvek najlepše dekorisane i prilagođene povodu."/>
+<meta property="og:image"  content="https://github.com/Kristina1999r/Cookies-Cakes/blob/main/ProjekatJS/cakes1.jpg"/>
+
+<meta name="twitter:title"      content="Cookies&Cakes">
+<meta name="twitter:description"    content="Najukusnije torte i kolaci, mafini, figurice za tortu">
+
+
+
+</head>
+
+<body onload="slider(); rotiraj()">
+    <div class="container">
+        <header class="header">
+            <div  id="first">
+            <div id = "logo5">
+              <img src="logo1.png" id="logo"   alt="logo">  
+            
+            </div>
+             <h1 id="naslov" title="torte">COOKIES&CAKES <br>-sladak zivot, sa slatkom navikom-</h1>
+            
+            </div>
+               <div class="navigation" >
+                <un class="unordered">
+                    <li><a href="https://htmlpreview.github.io/?https://github.com/Kristina1999r/Cookies-Cakes/blob/main/ProjekatJS/project.html" class="navlink" alt="pocetna">Pocetna</a></li>
+                    <li><a href="https://htmlpreview.github.io/?https://github.com/Kristina1999r/Cookies-Cakes/blob/main/ProjekatJS/project.html#onama"  class="navlink" alt="onama">O nama</a></li>
+                     <li><a href="https://htmlpreview.github.io/?https://github.com/Kristina1999r/Cookies-Cakes/blob/main/ProjekatJS/galerija.html"  class="navlink" alt="galerija">Galerija</a></li>
+                     <li><a href="" class="navlink" id="active" alt="narucivanje">Narucivanje</a></li>
+                    <li><a href="#kontakt" class="navlink" alt="kontakt">Kontakt</a></li>
+             </un>
+             </div>
+         </header>   
+                <div class="slider">
+                    <div id="img">
+                        <img src="2.jpg" alt="najukusnije torte">
+                    </div>
+                </div>
+    </div>
+    
+    
+    <div class="content " >
+        <a alt="naruci">
+            <h2 class="naruciti" title="narucivanje torti">NARUCIVANJE</h2>
+            <hr>
+            <p id="text4">-Kako naruciti?- </p>
+            <p class="text3">Naručivanje naših proizvoda možete izvršiti putem telefona 021
+                 / 64 99 888 i  062/ 11 33 876 ili direktno dolaskom u
+                 poslastičarnicu koja se nalazi na adresi  Rumenacka 24., Detelinara, Novi Sad.</p>
+                </a>
+                 <div class="red">
+                            <div class="box">
+                            <p class="boxtext">Odaberite ukus</p>
+                            <i class="fa fa-search ikonica"></i>
+                            <div class="boxokvir">
+                                <p class="text-u">Izaberite ukus koji zelite.
+                                    Imamo sirok asortiman razlicitih ukusa torti i kolaca.
+                                </p>
+                            </div>
+                        </div>
+                            <div class="box" >
+                                <p class="boxtext" >Odaberite izgled</p>
+                                <i class="fas fa-birthday-cake ikonica"></i>
+                                <div class="boxokvir">
+                                    <p class="text-u">Dizajn mozete sami osmisliti, 
+                                        ili izabraniti primere iz naseg asortimana.
+                                    </p>
+                                </div></div>  
+                            <div class="box">
+                                <p class="boxtext"  >Narucivanje </p>
+                                <i class="fas fa-car-side ikonica" ></i>
+                                <div class="boxokvir">
+                                    <p class="text-u">Ako ste se odlucili za izgled i ukus, 
+                                        na redu je narucivanje Vase poslastice.
+                                    </p>
+                                </div>  
+                            </div>       
+                                <div class="posalji">
+                                    <p id="text1">Posaljite nam Vase informacije, a mi cemo Vam rezervisati prvi slobodni termin. </p>
+                                    <hr>
+                                <input type="submit" onclick="popuni();"  value="POSALJI INFORMACIJE" name="naruci" id="sub">
+                                <p id="unesi"  ></p>
+                                <p id="demo"  ></p>
+                                
+                                 </div>
+    
+                                 <div id="forma">
+                                     <form id="popuniti" action="" method="POST">
+                                         <label class="text3">Ime:</label><input type="text"  onfocus="input(this); "name="Ime" id="ime" placeholder="Unesite Vase ime:" >
+                                         <label class="text3">Prezime:</label><input type="text" onfocus="input(this); "name="Prezime" id="prezime" placeholder="Unesite Vase prezime:">
+                                         <br>
+                                         <label class="text3">Email:</label><input type="text" onfocus="input(this); "name="Email" id="email" placeholder="Unesite Vasu e-mail adresu:">
+                                         <label class="text3">Lozinka:</label><input type="password" onfocus="input(this); "name="Lozinka" id="lozinka" placeholder="Unesite lozinku e-mail adrese">
+                                        <p id="greska" style="color: red; text-align: center;"></p>
+                                        </form>
+                                 </div>
+                    
+        </div>
+    </div>
+
+    
+      
+    
+    <div class="footer" style="text-align: center;"><br>
+        <div class="drugi" style="margin-top: 15px;">
+            <a name ="kontakt">
+    
+            <div class="okvir">
+                <i class="fa fa-envelope ikone" style="font-size: 39px;" ></i>
+                <p class="textkod">E-mail adresa:<br> slatkisi1990@gmail.com<br>slatkidani9@yahoo.com</p>
+            </div>
+            <div class="okvir">
+                <i class="fa fa-phone-square ikone" style="font-size: 39px;"></i>
+                <p class="textkod">Brojevi telefona: <br> 021/ 64 99 888<br>062/ 11 33 876</p>
+                
+            </div>
+            <div class="okvir" style="margin-bottom: 10px;" >
+                <i class="fa fa-map-marker ikone" style="font-size: 39px;" ></i>
+                <p class="textkod">Lokacija:<br>Rumenacka 24,<br> Detelinara, Novi Sad.</p>
+                
+            </div>
+            <hr >
+
+            </a>
+        </div>
+        
+        <br>
+    
+        
+            <div class="fb-like" data-href="https://htmlpreview.github.io/?https://github.com/Kristina1999r/Cookies-Cakes/blob/main/ProjekatJS/project.html" data-width="" data-layout="button" data-action="like" data-size="large" data-share="true"></div>
+            <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fhtmlpreview.github.io%2F%3Fhttps%3A%2F%2Fgithub.com%2FKristina1999r%2FCookies-Cakes%2Fblob%2Fmain%2FProjekatJS%2Fproject.html&width=129&layout=button&action=like&size=large&share=true&height=65&appId" id="buttfb" title="facebook"  width= "250" height= "65" style=" border: none; "scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+           <div style="text-align: center; position: relative; padding-bottom: 5px;">
+            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-show-count="false" id="twit">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+           
+            <div class="treci" style="margin-top: 10px;">
+                <hr style="width: 100%;">
+                <i class="fa fa-copyright" style="font-size:20px;color:white; "></i>
+                    <p style="color: white;display: inline-block;font-family: Vivaldi;font-size: 24px;">
+                        2020 Cookies&Cakes</p>
+                      </div>
+        
+        
+        
+        
+        </div>
+
+    
+</body>
+
+</html>
